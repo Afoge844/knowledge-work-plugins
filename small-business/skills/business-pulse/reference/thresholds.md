@@ -1,69 +1,38 @@
-# Thresholds
+# TEA Business Pulse — Thresholds
 
-Red/yellow/green cutoffs for each section of the pulse. These are SMB defaults — edit them to match the owner's actual targets and plan.
+Tune these as TEA grows. Each section has 🟢/🟡/🔴 cutoffs.
 
-Any threshold marked `# TODO: confirm with owner` should produce a note at the top of the first pulse output so the owner knows to tune it.
+## Content Pipeline
 
----
+| Metric | 🟢 Green | 🟡 Yellow | 🔴 Red |
+|---|---|---|---|
+| Items ready to produce | 3+ | 1–2 | 0 |
+| Days until next Substack publish | 7+ | 3–6 | < 3 and no essay drafted |
+| Days since last content published | < 8 | 8–14 | > 14 |
+| Saturday batch protected on Calendar | Yes, full day | Partial blocks | No blocks |
 
-## Cash & Finance
+## Course — AI Storyteller's Blueprint
 
-**Cash runway**
-- 🟢 ≥ 6 months  # TODO: confirm with owner
-- 🟡 3–6 months
-- 🔴 < 3 months
+| Metric | 🟢 Green | 🟡 Yellow | 🔴 Red |
+|---|---|---|---|
+| Module status movement | Progressed since last check | Same status as last week | Blocked > 14 days |
+| Modules complete | On track with target | 1 module behind target | 2+ modules behind target |
 
-**Revenue trend (MoM)**
-- 🟢 ≥ 0% (flat or growing)
-- 🟡 -5% to 0%
-- 🔴 < -5%
+## Community (Skool)
 
-**AR aging**
-- 🟢 No invoices past 31 days
-- 🟡 Any invoice 31–60 days past due
-- 🔴 Any invoice 60+ days past due OR total 61+ bucket > 10% of AR
+| Metric | 🟢 Green | 🟡 Yellow | 🔴 Red |
+|---|---|---|---|
+| New members WoW | +5 or more | +1–4 | 0 or negative |
+| Member cancellations WoW | 0 | 1–2 | 3+ |
+| Unanswered community posts > 48h | 0 | 1 | 2+ |
 
-**Overdue threshold**: any single invoice past due > 30 days gets named explicitly in the pulse — not just counted.
+## Email / Subscriber
 
----
+| Metric | 🟢 Green | 🟡 Yellow | 🔴 Red |
+|---|---|---|---|
+| Unresolved subscriber complaints | 0 | 1 | 2+ |
+| Emails awaiting reply > 48h | 0 | 1–2 | 3+ |
 
-## Revenue & Sales
+## Adjust These
 
-**7-day sales trend (vs. prior 7 days)**
-- 🟢 ≥ 0%
-- 🟡 -10% to 0%
-- 🔴 < -10%
-
-**Failed transactions**
-- 🟡 Any failed transaction > $200
-- 🔴 Any failed transaction > $1,000, or 3+ failures in the week
-
----
-
-## Pipeline
-
-**Pipeline coverage** (weighted pipeline ÷ monthly revenue target)  # TODO: confirm target with owner
-- 🟢 ≥ 2x monthly target
-- 🟡 1–2x
-- 🔴 < 1x
-
-**Stale deal**: no activity in 7+ days → flag  # TODO: owner may prefer 14 days
-**Slipped deal**: open deal with close date in past → always flag
-
----
-
-## Watch List
-
-No numeric thresholds — any escalation or complaint in Gmail/Slack gets surfaced. Severity is contextual; surface and let the owner decide.
-
----
-
-## Overall status rollup
-
-The pulse-level overall status is the worst section status. Override: if any individual risk names a specific customer with a dollar amount and a deadline within 7 days, roll up to 🔴 regardless of section colors.
-
----
-
-## When to tune
-
-Revisit these after 4 weeks of use. The defaults are conservative starting points — a healthy business will feel like it's always 🟢. Tighten them to reflect where the owner actually wants to act.
+These thresholds are starting points. As Substack and Skool grow, adjust the green/yellow/red cutoffs to match TEA's actual scale. Update this file and the pulse skill will automatically use the new values.
